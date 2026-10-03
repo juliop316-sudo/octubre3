@@ -1,0 +1,87 @@
+:root{
+    --principal: #4B995F;
+    --oscuro: #6d6f6e;
+    --fondo: #BABABA;
+    --blanco: #FFFFFF;
+    --espacio: 20px;
+    --radio: 10px;
+    --color_adicional: #FF8F00;
+}
+.oscuro{
+    --fondo:#080606;
+    --oscuro:#ffffff;
+    --blanco:#1e293b;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: var(--fondo);
+    color: var(--oscuro)
+}
+header{
+    background: var(--oscuro);
+    color: var(--fondo);
+    padding: var(--espacio);
+}
+nav{
+    display: flex;
+    gap: var(--espacio);
+}
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--color_adicional);
+}
+.hero{
+    text-align: center;
+    padding: 45px 20px;
+}
+.hero h2{
+    font-size: 50px;
+    margin-bottom: var(--espacio);
+}
+.hero p{
+    margin-bottom: var(--espacio);
+}
+button{
+    background: var(--principal);
+    color: var(--blanco);
+    padding: 20px 50px;
+    border-radius: var(--radio);
+}
+.servicios{
+    display: flex;
+    gap: var(--espacio);
+    padding: var(--espacio);
+}
+article{
+    background: var(--blanco);
+    color:var(--principal);
+    padding: var(--espacio);
+    flex: 1;
+    border-radius: var(--radio);
+    font-size: 20px;
+}
+footer{
+    background: var(--oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: var(--espacio);
+}
+.mensaje {
+    display: none;
+    background: var(--blanco);
+    padding: 30px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.mensaje button {
+    margin-top: 15px;
+}
